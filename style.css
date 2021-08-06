@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(#ccc, #999);
+  opacity: 0.9;
+  height: 100vh;
+  z-index: 100;
+}
+
+#main {
+  border: 2px solid #ccc;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-span {
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  width: 50%;
+  margin: 5px 10px;
+  border: 2px solid #ccc;
+  padding: 5px;
+}
+
+#main-span::after {
+  content: "v";
+  color: red;
+  /* opacity: 0.4; */
+  cursor: pointer;
+  margin-left: 25%;
+  animation: anim1 2s linear infinite;
+}
+
+@keyframes anim1 {
+  0% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
+  50% {
+    transform: translateY(5px);
+    transform: scale(1.2);
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
+}
+
+.content {
+  display: none;
+  background: red;
+}
+
+#content {
+  border: 2px solid red;
+  width: 75%;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column;
+  align-items: column;
+  justify-content: center;
+  background: purple;
+  margin: 0 auto; */
+}
+
+.content {
+  display: none;
+  background: red;
+}
+
+#divStr {
+  text-transform: uppercase;
+  display: flex;
+  background: purple;
+  color: #fff;
+  justify-content: space-evenly;
+  padding: 5px 0;
+}
+
+.objTitle {
+  text-transform: uppercase;
+  color: red;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+.objTitle::after {
+  content: "v";
+  margin-left: 25%;
+}
+
+.objContentToggle {
+  display: none;
+}
+
+.objBody {
+  background: #fff;
+}
+
+.objSingle {
+  display: flex;
+  height: 24px;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+}
+
+.obj1 {
+}
+
+.obj2 {
+}
+
+.arrTitle {
+  display: flex;
+  text-transform: uppercase;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+.arrTitle::after {
+  content: "v";
+  margin-left: 25%;
+}
+
+.arrContentToggle {
+  display: none;
+}
+
+.singleArrItem {
+  border: 1px solid #ccc;
+  height: 24px;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+}
