@@ -54,15 +54,16 @@ body {
   }
 }
 
-.content {
+/* .content {
   display: none;
   background: red;
-}
+} */
 
 #content {
   border: 2px solid red;
   width: 75%;
   margin: 0 auto;
+  /* display: none; */
   /* display: flex;
   flex-direction: column;
   align-items: column;
@@ -73,7 +74,11 @@ body {
 
 .content {
   display: none;
-  background: red;
+  /* background: red; */
+}
+
+.show-content {
+  display: block;
 }
 
 #divStr {
@@ -97,12 +102,13 @@ body {
   margin-left: 25%;
 }
 
-.objContentToggle {
+.objBody {
+  background: #fff;
   display: none;
 }
 
-.objBody {
-  background: #fff;
+.objContentToggle {
+  display: block;
 }
 
 .objSingle {
@@ -110,12 +116,6 @@ body {
   height: 24px;
   justify-content: space-around;
   border: 1px solid #ccc;
-}
-
-.obj1 {
-}
-
-.obj2 {
 }
 
 .arrTitle {
@@ -133,14 +133,19 @@ body {
   margin-left: 25%;
 }
 
-.arrContentToggle {
-  display: none;
-}
-
 .singleArrItem {
   border: 1px solid #ccc;
   height: 24px;
   background: #fff;
   display: flex;
   justify-content: space-around;
+  /* display: none; */
+}
+
+.arrBody {
+  display: none;
+}
+
+.arrContentToggle {
+  display: block;
 }

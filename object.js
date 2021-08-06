@@ -40,6 +40,7 @@ for (let key in J1) {
     // h3.classList.toggle("arrTitleToggle");
 
     let body = document.createElement("div");
+    body.classList.add("arrBody");
     arr.forEach((item, index) => {
       let singleArrItem = document.createElement("div");
       singleArrItem.classList.add("singleArrItem");
@@ -113,7 +114,7 @@ for (let key in J1) {
 
 function displayContentHandler() {
   console.log("Hello");
-  div1.classList.toggle("content");
+  div1.classList.toggle("show-content");
 }
 
 titleDiv.addEventListener("click", displayContentHandler);
